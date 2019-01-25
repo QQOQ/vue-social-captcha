@@ -1,13 +1,26 @@
 {
   "name": "vue-social-captcha",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-social-captcha.umd.min.js",
+  "homepage": "https://github.com/QQOQ/vue-social-captcha",
+  "author": {
+    "name": "老萨",
+    "email": "sinaapp@qq.com",
+    "url": "https://github.com/QQOQ/vue-social-captcha"
+  },
+  "keywords": [
+        "contribution",
+        "vue-contribution",
+        "github contribution"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-social-captcha src/captcha/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.21"
   },
   "devDependencies": {
