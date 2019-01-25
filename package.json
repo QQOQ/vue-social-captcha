@@ -1,6 +1,6 @@
 {
   "name": "vue-social-captcha",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/vue-social-captcha.umd.min.js",
   "homepage": "https://github.com/QQOQ/vue-social-captcha",

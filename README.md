@@ -120,3 +120,7 @@ url请求时会附带以下两个参数到服务端，以便于业务逻辑开�
     "msg":"验证成功"
 }
 ```
+
+## 相关资源
+- [腾讯验证](https://007.qq.com/web-access.html?ADTAG=acces.tab)
+- [极验验证](https://docs.geetest.com/install/deploy/client/web)
