@@ -10,13 +10,14 @@
     "url": "https://github.com/QQOQ/vue-social-captcha"
   },
   "keywords": [
-        "contribution",
-        "vue-contribution",
-        "github contribution"
+        "captcha",
+        "vue captcha",
+        "Geetest captcha",
+        "Tencent captcha"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-social-captcha src/captcha/index.js",
+    "build": "vue-cli-service build --target lib --name vue-social-captcha src/Captcha/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

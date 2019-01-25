@@ -10,7 +10,12 @@ export default {
     name: 'Captcha',
     props: {
         parm: {
-            type: Object
+            type: Object,
+            required: true
+        },
+        url: {
+            type: String,
+            required: true
         },
         type: {
             type: String,
@@ -91,7 +96,7 @@ export default {
                     if(res.ret === 0){
                         t.loading(res);
                         // 成功
-                        axios.get(t.$config.baseUrl.captcha,{
+                        axios.get(t.url,{
                             params: {
                                 g_type: t.type,
                                 scene: t.scene,
@@ -117,14 +122,13 @@ export default {
         },
         GeetestInit(){
             const t = this;
-            axios.get(t.$config.baseUrl.captcha,{
+            axios.get(t.url,{
                 params: {
                     g_type: t.type,
                     scene: t.scene,
                 }
             }).then((response) => {
                 if(response.data.code == 1){
-                    //t.success(response.data);
                     const data = response.data.data;
                     const o = {
                         // 以下配置参数来自服务端 SDK
@@ -135,7 +139,7 @@ export default {
                     }
                     initGeetest(Object.assign(o,t.parm), function (captchaObj) {
                         captchaObj.appendTo("#"+t.id);
-                        console.log(captchaObj)
+                        //console.log(captchaObj)
                         captchaObj.onReady(function(){
                             //验证码ready之后才能调用verify方法显示验证码
                         }).onSuccess(function(){
