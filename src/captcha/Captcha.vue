@@ -99,7 +99,7 @@ export default {
                         axios.get(t.url,{
                             params: {
                                 g_type: t.type,
-                                scene: t.scene,
+                                g_scene: t.scene,
                                 ticket: res.ticket,
                                 randstr: res.randstr,
                                 bizState: res.bizState
@@ -125,7 +125,7 @@ export default {
             axios.get(t.url,{
                 params: {
                     g_type: t.type,
-                    scene: t.scene,
+                    g_scene: t.scene,
                 }
             }).then((response) => {
                 if(response.data.code == 1){

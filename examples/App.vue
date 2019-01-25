@@ -1,13 +1,19 @@
 <template>
     <div id="app">
-        <Captcha id="Captcha" scene="Login" type="Geetest" :parm="captchaOption" @callback="captchaNotice" url="http://pay.test.com/admin/captcha/">
+        <Captcha
+            id="Captcha"
+            scene="Login"
+            type="Geetest"
+            :parm="captchaOption"
+            @callback="captchaNotice"
+            url="http://pay.test.com/admin/captcha/"
+        >
             <input id="Captcha" type="button" value="登陆"/>
         </Captcha>
     </div>
 </template>
 
 <script>
-
 export default {
     name: 'app',
     data () {
@@ -22,6 +28,9 @@ export default {
         }
     },
     methods: {
+        // 回调监听
+        // status: 1成功,2验证中,0失败
+        // res: 三方返回的原始数据
         captchaNotice(status, res){
             console.log(status)
             console.log(res)

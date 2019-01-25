@@ -2723,12 +2723,12 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
 var es6_function_name = __webpack_require__("7f7f");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"27e231db-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Captcha/Captcha.vue?vue&type=template&id=54778df4&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"27e231db-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Captcha/Captcha.vue?vue&type=template&id=0868c1f8&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._t("default")],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/Captcha/Captcha.vue?vue&type=template&id=54778df4&scoped=true&
+// CONCATENATED MODULE: ./src/Captcha/Captcha.vue?vue&type=template&id=0868c1f8&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js
 var object_assign = __webpack_require__("5176");
@@ -2838,7 +2838,7 @@ var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
           axios_default.a.get(t.url, {
             params: {
               g_type: t.type,
-              scene: t.scene,
+              g_scene: t.scene,
               ticket: res.ticket,
               randstr: res.randstr,
               bizState: res.bizState
@@ -2863,7 +2863,7 @@ var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
       axios_default.a.get(t.url, {
         params: {
           g_type: t.type,
-          scene: t.scene
+          g_scene: t.scene
         }
       }).then(function (response) {
         if (response.data.code == 1) {
@@ -3010,7 +3010,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "54778df4",
+  "0868c1f8",
   null
   
 )
